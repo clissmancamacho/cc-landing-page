@@ -193,6 +193,182 @@ p {
     .section_title .line li:nth-of-type(3) {
       width: 7px; }
 
+/*===== Experience Section Style =====*/
+.experience_area {
+  background-color: #fff;
+}
+
+.experience_content {
+  position: relative;
+}
+
+.experience_item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 50px;
+  border-left: 2px solid #00A78E;
+}
+
+.experience_item:before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: #00A78E;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #00A78E;
+}
+
+.experience_date {
+  margin-bottom: 15px;
+}
+
+.experience_date span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00A78E;
+  background-color: rgba(0, 167, 142, 0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.experience_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #293651;
+  margin-bottom: 8px;
+}
+
+.experience_company {
+  font-size: 16px;
+  font-weight: 600;
+  color: #646F87;
+  margin-bottom: 15px;
+}
+
+.experience_description {
+  list-style: none;
+  padding: 0;
+}
+
+.experience_description li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #646F87;
+}
+
+.experience_description li:before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #00A78E;
+  font-weight: bold;
+}
+
+/*===== Projects Section Style =====*/
+.projects_area {
+  background-color: #f8f9fa;
+}
+
+.project_item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project_item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project_icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 167, 142, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.project_icon i {
+  font-size: 24px;
+  color: #00A78E;
+}
+
+.project_content {
+  flex: 1;
+}
+
+.project_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #293651;
+  margin-bottom: 12px;
+}
+
+.project_description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #646F87;
+  margin-bottom: 15px;
+}
+
+.project_tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project_tech span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #00A78E;
+  background-color: rgba(0, 167, 142, 0.1);
+  padding: 4px 12px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 167, 142, 0.2);
+}
+
+@media (max-width: 768px) {
+  .project_item {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+  }
+  
+  .project_icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+  
+  .experience_item {
+    padding-left: 30px;
+  }
+  
+  .experience_title {
+    font-size: 18px;
+  }
+  
+  .experience_company {
+    font-size: 14px;
+  }
+}
+
 /*===== All Preloader Style =====*/
 .preloader {
   /* Body Overlay */
